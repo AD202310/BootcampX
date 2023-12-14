@@ -17,3 +17,15 @@ CREATE TABLE assistance_requests (
   student_feedback TEXT,
   teacher_feedback TEXT
 );
+
+-- =====================
+
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(255),
+  birth_year SMALLINT,
+  member_since TIMESTAMP
+);
+
+ALTER TABEL users
+ADD COLUMN add_info VARCHAR(255);
